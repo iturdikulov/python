@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "py"
+version = "0.0.1"
+description = ""
+authors = ["Inom Turdikulov <inom@iturdikulov.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pydantic = "^2.9"
+requests = "^2.32"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.basedpyright]
+# many settings are not enabled even in strict mode, which is why basedpyright
+# includes an "all" option you can then decide which rules you want to disable
+typeCheckingMode = "strict"
