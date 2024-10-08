@@ -13,6 +13,9 @@ python = "^3.10"
 pytest = "^8.3.2"
 pydantic = "^2.9"
 requests = "^2.32"
+oauthlib = "^3.2.2"
+aiohttp = "^3.10.6"
+aio-pika = "^9.4.3"
 
 [build-system]
 requires = ["poetry-core"]
@@ -21,4 +24,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.basedpyright]
 # many settings are not enabled even in strict mode, which is why basedpyright
 # includes an "all" option you can then decide which rules you want to disable
-typeCheckingMode = "strict"
+typeCheckingMode = "all"
